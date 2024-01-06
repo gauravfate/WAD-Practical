@@ -62,3 +62,27 @@ Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/gauravfate/WAD-Practical.git
  * [new branch]      main -> main
 branch 'main' set up to track 'origin/main'.
+
+//
+branch commands
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (main)
+$ git branch
+* main
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (main)
+$ git branch branch1
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (main)
+$ git branch
+  branch1
+* main
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (main)
+$ git checkout 'branch1'
+Switched to branch 'branch1'
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (branch1)
+$ git branch
+* branch1
+  main
+
