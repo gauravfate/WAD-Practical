@@ -1,0 +1,64 @@
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical
+$ git init
+Initialized empty Git repository in C:/Users/Gaurav/Desktop/WAD Practical/.git/
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        Assignment 1/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git add .
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   Assignment 1/Commands.docx
+        new file:   Assignment 1/Information.docx
+
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git commit -m "Setup of the folder"
+[master (root-commit) 2683aba] Setup of the folder
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Assignment 1/Commands.docx
+ create mode 100644 Assignment 1/Information.docx
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git remote add origin https://github.com/gauravfate/WAD-Practical.git
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/gauravfate/WAD-Practical.git'
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (master)
+$ git branch -M main
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (main)
+$ git remote add origin https://github.com/gauravfate/WAD-Practical.git
+error: remote origin already exists.
+
+Gaurav@LAPTOP-2VFGCMTC MINGW64 ~/Desktop/WAD Practical (main)
+$ git push -u origin main
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (4/4), 283 bytes | 283.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/gauravfate/WAD-Practical.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
