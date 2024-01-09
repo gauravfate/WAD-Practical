@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form And Details diplay</title>
+</head>
+<body>
+    
+    <form action="result.html">
+        <h1>Form</h1>
+
+        <label for="name">Name</label>
+        <input type="text" placeholder="Name" id="name">
+        
+        <label for="email">Email</label>
+        <input type="email" placeholder="abc@gmail.com" id="email">
+        
+        <label for="address">Address</label>
+        <input type="text" placeholder="Address" id="address">
+        
+        <label for="age">Age</label>
+        <input type="text" placeholder="age" id="age">
+
+        <input id="btn" onclick="fun()" type="submit">
+    </form>
+
+
+    <script>
+
+        
+        function fun() {
+
+            let namef = document.getElementById("name").value;
+            let emailf = document.getElementById("email").value;
+            let addressf = document.getElementById("address").value;
+            let agef = document.getElementById("age").value;
+
+            let myObj = {
+                name : namef,
+                email: emailf,
+                address : addressf,
+                age : agef
+            }
+
+            let data = JSON.stringify(myObj);
+
+            localStorage.setItem("test1", data);
+
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Display Data</title>
+</head>
+<body>
+
+    <div class="details">
+        <h1>Details</h1>
+        <div>
+            <h2>Name: </h2>
+            <p id="name"></p>
+        </div>
+        <div>
+            <h2>Email: </h2>
+            <p id="email"> </p>
+        </div>
+        <div>
+            <h2>Address: </h2>
+            <p id="address"> </p>
+
+        </div>
+        <div>
+            <h2>Age: </h2>
+            <p id="age"> </p>
+        </div>
+        <button onclick="Display()">Display</button>
+    </div>
+
+
+    <script>
+        
+        function Display() {
+            let name = document.getElementById("name");
+            let email = document.getElementById("email");
+            let address = document.getElementById("address");
+            let age = document.getElementById("age");
+
+            let rowD = localStorage.getItem("test1");
+            let data = JSON.parse(rowD);
+            
+            name.innerHTML = data.name;
+            email.innerHTML = data.email;
+            address.innerHTML = data.address;
+            age.innerHTML = data.age;
+
+        }
+
+    </script>
+
+</body>
+</html>
