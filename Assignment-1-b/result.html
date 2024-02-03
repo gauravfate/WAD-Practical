@@ -1,55 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
     <link rel="stylesheet" href="style.css">
-    <title>Display Data</title>
-</head>
-<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <div class="details">
-        <h1>Details</h1>
-        <div>
-            <h2>Name: </h2>
+</head>
+
+<body>
+    <div class="detail">
+        <h1>Student details</h1>
+        <hr>
+        <div class="name">
+            <h3>Name : </h3>
             <p id="name"></p>
         </div>
-        <div>
-            <h2>Email: </h2>
-            <p id="email"> </p>
-        </div>
-        <div>
-            <h2>Address: </h2>
-            <p id="address"> </p>
 
+        <div class="email">
+            <h3>Email : </h3>
+            <p id="email"></p>
         </div>
-        <div>
-            <h2>Age: </h2>
-            <p id="age"> </p>
+
+        <div class="mobile">
+            <h3>Mobile no. : </h3>
+            <p id="mobile"></p>
         </div>
-        <button onclick="Display()">Display</button>
+
+        <div class="branch">
+
+            <h3>Branch : </h3>
+            <p id="branch"></p>
+        </div>
+
+        <button id="btn">Display Data</button>
+
     </div>
-
-
     <script>
-        
-        function Display() {
-            let name = document.getElementById("name");
-            let email = document.getElementById("email");
-            let address = document.getElementById("address");
-            let age = document.getElementById("age");
+        //        function display(){
+        //         let row = localStorage.getItem("test");
+        //         let Obj = JSON.parse(row);
 
-            let rowD = localStorage.getItem("test1");
-            let data = JSON.parse(rowD);
-            
-            name.innerHTML = data.name;
-            email.innerHTML = data.email;
-            address.innerHTML = data.address;
-            age.innerHTML = data.age;
+        //         document.querySelector("#name").innerHTML= Obj.name;
+        //         document.querySelector("#email").innerHTML= Obj.email;
+        //         document.querySelector("#mobile").innerHTML= Obj.mobile;
+        //         document.querySelector("#branch").innerHTML= Obj.branch;
+        //  }
+        $(document).ready(function () {
+            $("#btn").click(function () {
+                let row = localStorage.getItem("test");
+                let Obj = JSON.parse(row);
+                $("#name").text(Obj.name);
+                $("#email").text(Obj.email);
+                $("#mobile").text(Obj.mobile);
+                $("#branch").text(Obj.branch);
 
-        }
+
+            })
+        })
+
 
     </script>
 
 </body>
+
 </html>

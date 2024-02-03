@@ -1,56 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Form And Details diplay</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
 </head>
+
 <body>
-    
-    <form action="result.html">
-        <h1>Form</h1>
+    <div id="form">
+        <div class="head">
+            <h1>Registration Form</h1>
+        </div>
+        <form >
+            <div class="field">
+                <label for="name">Enter Full Name : </label><br>
+                <input type="text" id="name">
+            </div>
+            <div class="field">
+                <label for="email">Enter Email : </label><br>
+                <input type="email" id="email">
+            </div>
+            <div class="field">
+                <label for="mobile">Enter Mobile no. : </label><br>
+                <input type="tel" id="mobile">
+            </div>
 
-        <label for="name">Name</label>
-        <input type="text" placeholder="Name" id="name">
-        
-        <label for="email">Email</label>
-        <input type="email" placeholder="abc@gmail.com" id="email">
-        
-        <label for="address">Address</label>
-        <input type="text" placeholder="Address" id="address">
-        
-        <label for="age">Age</label>
-        <input type="text" placeholder="age" id="age">
 
-        <input id="btn" onclick="fun()" type="submit">
-    </form>
+            <div class="field">
+                <label for="branch">Enter Branch : </label><br>
+                <input type="text" name="branch" id="branch">
 
+            </div>
+            <input value="REGISTER" id="submit">
 
+        </form>
+    </div>
     <script>
+        $(document).ready(function () {
+            $("#submit").click(function () {
+                let val = { name: $("#name").val(), email: $("#email").val(), mobile: $("#mobile").val(), branch: $("#branch").val() }
 
-        
-        function fun() {
+                let val2 = JSON.stringify(val);
+                localStorage.setItem("test", val2);
 
-            let namef = document.getElementById("name").value;
-            let emailf = document.getElementById("email").value;
-            let addressf = document.getElementById("address").value;
-            let agef = document.getElementById("age").value;
-
-            let myObj = {
-                name : namef,
-                email: emailf,
-                address : addressf,
-                age : agef
-            }
-
-            let data = JSON.stringify(myObj);
-
-            localStorage.setItem("test1", data);
-
-        }
+                $("#form").load("http://127.0.0.1:5500/Assignment-1-b/result.html");
+            })
+        })
 
     </script>
 
 </body>
+
 </html>
