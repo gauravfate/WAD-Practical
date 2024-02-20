@@ -1,0 +1,28 @@
+<div class="container">
+    <form action="" method="post" class="sign-form" id="sign-form" autocomplete="on" onsubmit="change3()">
+        <h1 class="form-title">Sign Up</h1>
+        <p class="form-caption">See your growth and get consulting support!</p>
+       
+        <label for="username">Name<span class="star-required">*</span></label>
+        <input type="text" name="username" id="username" placeholder="Name"  autofocus required>
+
+        <label for="email">Email<span class="star-required">*</span></label>
+        <input type="email" name="email" id="email" placeholder="mail@website.com" [(ngModel)]="email" required>
+
+        <label for="password">Password<span class="star-required">*</span></label>
+        <input type="password" name="password" id="password" placeholder="Min. 8 character" [(ngModel)]="password" required>
+       
+        <br>
+
+        <input type="checkbox" name="terms-agree" id="terms-agree" required>
+        <p class="sentence-agree">I agree to the <a href="">Terms & Conditions</a></p><br>
+
+        <button (click)="signup()" class="signup">Signup</button>
+
+        <p class="have-account-line">Already have an Account? <a routerLink="/Signin">Signin</a></p>
+
+        
+    </form>
+    <router-outlet></router-outlet> 
+</div>
+s
