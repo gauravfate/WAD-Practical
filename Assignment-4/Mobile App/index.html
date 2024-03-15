@@ -1,0 +1,139 @@
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Mobile: Theme Download</title>
+	<link rel="stylesheet" href="themes/Assignment.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<style>
+	.text-center {
+		text-align: center;
+	}
+	.h-screen{
+		height: 77vh;
+	}
+</style>
+
+<body>
+	<div data-role="page" id="page1" data-theme="b">
+		<div data-role="header" data-position="inline">
+			<h1>It Worked</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page1" data-transition="slidedown">Home</a></li>
+				<li><a href="#page2" data-transition="slidedown">Login</a></li>
+				<li><a href="#page3" data-transition="slidedown">About</a></li>
+			</ul>
+		</div>
+		<div data-role="content " data-theme="b">
+
+			
+				<div class="home-content h-screen text-center">
+					<h2>Welcome to Our Website</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget diam nec mi suscipit
+						ullamcorper.</p>
+				</div>
+			
+
+		</div>
+
+		<div data-role="footer">
+			<p class="text-center">&copy; 2024</p>
+		</div>
+	</div>
+
+	<div data-role="page" id="page2" data-theme="b">
+		<div data-role="header" data-position="inline">
+			<h1>It Worked</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page1" data-transition="slidedown">Home</a></li>
+				<li><a href="#page2" data-transition="slidedown">Login</a></li>
+				<li><a href="#page3" data-transition="slidedown">About</a></li>
+			</ul>
+		</div>
+		<div data-role="content" data-theme="b">
+			<div role="main" class="ui-content">
+				<h3>sign up</h3>
+				<label for="txt-first-name">first name</label>
+				<input type="text" name="txt-first-name" id="txt-first-name" value="">
+				<label for="txt-last-name">last name</label>
+				<input type="text" name="txt-last-name" id="txt-last-name" value="">
+				<label for="txt-email">email address</label>
+				<input type="text" name="txt-email" id="txt-email" value="">
+				<label for="txt-password">password</label>
+				<input type="password" name="txt-password" id="txt-password" value="">
+				<label for="txt-password-confirm">confirm password</label>
+				<input type="password" name="txt-password-confirm" id="txt-password-confirm" value="">
+				<a href="#dlg-sign-up-sent" data-rel="popup" data-transition="pop" data-position-to="window"
+					id="btn-submit" class="ui-btn ui-btn-b ui-corner-all mc-top-margin-1-5">submit</a>
+				<div data-role="popup" id="dlg-sign-up-sent" data-dismissible="false" style="max-width:400px;">
+					<div data-role="header">
+						<h1>almost done...</h1>
+					</div>
+					<div role="main" class="ui-content">
+						<h3>confirm your email address</h3>
+						<p>we sent you an email with instructions on how to confirm your email address. please check
+							your inbox and follow the instructions in the email.</p>
+						<div class="mc-text-center"><a href="#page1"
+								class="ui-btn ui-corner-all ui-shadow ui-btn-b mc-top-margin-1-5">ok</a></div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<p class="text-center">&copy; 2024</p>
+		</div>
+	</div>
+
+	<div data-role="page" id="page3" data-theme="b">
+		<div data-role="header" data-position="inline">
+			<h1>It Worked</h1>
+		</div>
+		<div data-role="navbar">
+			<ul>
+				<li><a href="#page1" data-transition="slidedown">Home</a></li>
+				<li><a href="#page2" data-transition="slidedown">Login</a></li>
+				<li><a href="#page3" data-transition="slidedown">About</a></li>
+			</ul>
+		</div>
+		<div data-role="content" data-theme="b">
+			<h1 class="text-align ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user">Gaurav Fate</h1>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+				industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+				scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+				into electronic typesetting, remaining essentially unchanged.
+				It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+				more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+			</p>
+			<div >Skills:
+				<div>
+					<ul>
+						<li>HTML</li>
+						<li>CSS</li>
+						<li>JS</li>
+						<li>Angular</li>
+						<li>React</li>
+						<li>Tailwind CSS</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<div data-role="footer">
+			<p class="text-center">&copy; 2024</p>
+		</div>
+	</div>
+</body>
+
+</html>
