@@ -1,0 +1,23 @@
+C:\Users\Administrator>docker run -it node
+Unable to find image 'node:latest' locally
+latest: Pulling from library/node
+609c73876867: Pull complete
+7247ea8d81e6: Pull complete
+be374d06f382: Pull complete
+b4580645a8e5: Pull complete
+dfc93b8f025c: Pull complete
+a67998ba05d7: Pull complete
+9513f49617f6: Pull complete
+e2a102227dc6: Pull complete
+
+C:\Users\Administrator>docker run -it node
+Welcome to Node.js v21.7.3.
+> let a = 10
+undefined
+>
+> let b = 3
+undefined
+>
+> a+b
+13
+>
