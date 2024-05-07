@@ -1,0 +1,23 @@
+ Git is a version control system that helps developers manage and track changes to their code. Imagine you're working on a big project with a team of people. Git helps you keep track of who made what changes, when they made them, and why they made them.
+
+Here's how it works:
+
+Repository: Git stores all the files for your project in what's called a repository. Think of it as a big folder that contains all your code and its history.
+Commits: Whenever you make changes to your code that you want to save, you create a commit. A commit is like a snapshot of your code at a particular point in time. You can add a message to each commit to describe what changes you made.
+Branches: Git allows you to work on different features or fixes in isolation by creating branches. Each branch is like a separate timeline of your project's history. You can create, merge, and delete branches as needed.
+Remote: In addition to keeping track of changes locally on your computer, Git also allows you to collaborate with others by syncing your changes to a remote repository, such as one hosted on GitHub or GitLab.
+Pull Requests: When you want to merge your changes from one branch into another (like merging a feature branch into the main branch), you typically create a pull request. Pull requests allow you to review the changes 
+before merging them and provide a way for team members to discuss and collaborate on the code.
+
+git init: Initializes a new Git repository in the current directory. It creates a hidden directory named .git where Git stores its metadata and configuration.
+git clone [url]: Copies an existing Git repository from a remote source (like GitHub) to your local machine.
+git add [file]: Adds changes in the specified file to the staging area, preparing them to be committed.
+git commit -m "[message]": Commits the staged changes to the repository with a descriptive message explaining the changes made.
+git status: Displays the current state of the repository, showing which files have been modified, added, or deleted.
+git diff: Shows the differences between the changes in the working directory and the staging area.
+git log: Displays a history of commits in the repository, including information like commit hash, author, date, and commit message.
+git branch: Lists all branches in the repository. Adding a branch name after the command creates a new branch.
+git checkout [branch_name]: Switches to the specified branch. Adding a file name after the command allows you to discard changes in that file.
+git merge [branch_name]: Merges changes from the specified branch into the current branch.
+git pull: Fetches changes from a remote repository and merges them into the current branch.
+git push: Uploads local changes to a remote repository.
